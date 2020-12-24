@@ -30,8 +30,8 @@ $router->patch('/users/{id}', 'UserController@update'); // update user
 $router->delete('/users/{id}', 'UserController@delete'); // delete
 
 //foreign key
-//$router->get('/usersjob', 'UserJobController@index');
-//$router->get('/usersjob/{id}', 'UserJobController@show');
-//$router->post('/usersjob/add', 'UserJobController@create');
-//$router->put('/usersjob/update/{id}', 'UserJobController@update');
-//$router->delete('/usersjob/delete/{id}', 'UserJobController@destroy');
+$router->get('/usersjob', 'UserJobController@index');
+$router->get('/usersjob/{id}', 'UserJobController@show');
+$router->post('/usersjob', 'UserJobController@create');
+$router->put('/usersjob/{id}', 'UserJobController@update');
+$router->delete('/usersjob/{id}', 'UserJobController@destroy');
